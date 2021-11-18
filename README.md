@@ -16,8 +16,7 @@ You can install the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-#devtools::install_github("stat545ubc-2021/Yuwei_Luo_Assignment-B-2")
+#devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
 ```
 
 ## Example
