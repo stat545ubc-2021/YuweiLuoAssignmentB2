@@ -2,6 +2,7 @@
 #'
 #'This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
 #'
+#'@importFrom magrittr "%>%"
 #'
 #'@param data Tibble or data frame that you want to select from
 #'@param cal_type determine summary method(max, min, mean, median, standard deviation) need be used for calculation.
@@ -78,7 +79,6 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   else if(cal_type == "sd"){
     res <- df %>%
-
       dplyr::group_by(!!category) %>%
       dplyr::summarise(sd = sd(!!col_name, na.rm = rem_na))
     return(res)

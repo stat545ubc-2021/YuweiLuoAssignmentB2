@@ -17,11 +17,16 @@ You can install the development version from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("stat545ubc-2021/Yuwei_Luo_Assignment-B-2")
+#devtools::install_github("stat545ubc-2021/Yuwei_Luo_Assignment-B-2")
 ```
 
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
-    #> Error in df %>% dplyr::group_by(!!category) %>% dplyr::summarise(min = min(!!col_name, : could not find function "%>%"
+    #> # A tibble: 3 x 2
+    #>   sex      min
+    #>   <fct>  <int>
+    #> 1 female  2700
+    #> 2 male    3250
+    #> 3 <NA>    2975
