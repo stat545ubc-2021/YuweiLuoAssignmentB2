@@ -51,6 +51,7 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   if(cal_type == "max"){
     res <- df %>%
+      tidyr::drop_na(!!category) %>%
       dplyr::group_by(!!category) %>%
       dplyr::summarise(max = max(!!col_name, na.rm = rem_na))
     return(res)
@@ -58,6 +59,7 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   else if(cal_type == "min"){
     res <- df %>%
+      tidyr::drop_na(!!category) %>%
       dplyr::group_by(!!category) %>%
       dplyr::summarise(min = min(!!col_name, na.rm = rem_na))
     return(res)
@@ -65,6 +67,7 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   else if(cal_type == "mean"){
     res <- df %>%
+      tidyr::drop_na(!!category) %>%
       dplyr::group_by(!!category) %>%
       dplyr::summarise(mean = mean(!!col_name, na.rm = rem_na))
     return(res)
@@ -72,6 +75,7 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   else if(cal_type == "median"){
     res <- df %>%
+      tidyr::drop_na(!!category) %>%
       dplyr::group_by(!!category) %>%
       dplyr::summarise(median = median(!!col_name, na.rm = rem_na))
     return(res)
@@ -79,6 +83,7 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   else if(cal_type == "sd"){
     res <- df %>%
+      tidyr::drop_na(!!category) %>%
       dplyr::group_by(!!category) %>%
       dplyr::summarise(sd = sd(!!col_name, na.rm = rem_na))
     return(res)

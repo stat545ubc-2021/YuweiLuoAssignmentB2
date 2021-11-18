@@ -23,9 +23,8 @@ You can install the development version from
 
 This is a basic example which shows you how to solve a common problem:
 
-    #> # A tibble: 3 x 2
+    #> # A tibble: 2 x 2
     #>   sex      min
     #>   <fct>  <int>
     #> 1 female  2700
     #> 2 male    3250
-    #> 3 <NA>    2975

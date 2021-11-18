@@ -26,6 +26,7 @@ test_that("Testing all error throw situations", {
 test_that("Testing function result", {
 
   exp_max_res <- palmerpenguins::penguins %>%
+    tidyr::drop_na(sex) %>%
     dplyr::group_by(sex) %>%
     dplyr::summarise(max = max(body_mass_g, na.rm = TRUE))
 
@@ -33,6 +34,7 @@ test_that("Testing function result", {
 
 
   exp_min_res <- palmerpenguins::penguins %>%
+    tidyr::drop_na(sex) %>%
     dplyr::group_by(sex) %>%
     dplyr::summarise(min = min(body_mass_g, na.rm = TRUE))
 
@@ -40,6 +42,7 @@ test_that("Testing function result", {
 
 
   exp_mean_res <- palmerpenguins::penguins %>%
+    tidyr::drop_na(sex) %>%
     dplyr::group_by(sex) %>%
     dplyr::summarise(mean = mean(body_mass_g, na.rm = TRUE))
 
@@ -47,6 +50,7 @@ test_that("Testing function result", {
 
 
   exp_median_res <- palmerpenguins::penguins %>%
+    tidyr::drop_na(sex) %>%
     dplyr::group_by(sex) %>%
     dplyr::summarise(median = median(body_mass_g, na.rm = TRUE))
 
@@ -54,6 +58,7 @@ test_that("Testing function result", {
 
 
   exp_sd_res <- palmerpenguins::penguins %>%
+    tidyr::drop_na(sex) %>%
     dplyr::group_by(sex) %>%
     dplyr::summarise(sd = sd(body_mass_g, na.rm = TRUE))
 
