@@ -1,0 +1,38 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# YuweiLuoAssignmentB2
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of YuweiLuoAssignmentB2 is to calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2021/Yuwei_Luo_Assignment-B-2")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r echo=FALSE}
+library(YuweiLuoAssignmentB2)
+summaryInfoCal(palmerpenguins::penguins, "min", "body_mass_g", "sex")
+```
