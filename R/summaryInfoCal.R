@@ -1,6 +1,6 @@
 #'@title Summary Information Calculator
 #'
-#'This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
+#'@description This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
 #'
 #'@import stats
 #'@import tidyr

@@ -2,9 +2,7 @@
 % Please edit documentation in R/summaryInfoCal.R
 \name{summaryInfoCal}
 \alias{summaryInfoCal}
-\title{Summary Information Calculator
-
-This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)}
+\title{Summary Information Calculator}
 \usage{
 summaryInfoCal(df, cal_type, col_name, category, rem_na = TRUE)
 }
@@ -23,8 +21,6 @@ summaryInfoCal(df, cal_type, col_name, category, rem_na = TRUE)
 Tibble or data frame includes summary information for col_name input based on category input
 }
 \description{
-Summary Information Calculator
-
 This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
 }
 \examples{
