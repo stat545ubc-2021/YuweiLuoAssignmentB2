@@ -2,4 +2,6 @@
 
 export("%>%")
 export(summaryInfoCal)
+import(stats)
+import(tidyr)
 importFrom(magrittr,"%>%")

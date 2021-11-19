@@ -9,6 +9,8 @@ This function calculate the Tibble or data frame column summary information(max,
 summaryInfoCal(df, cal_type, col_name, category, rem_na = TRUE)
 }
 \arguments{
+\item{df}{Tibble or data frame that you want to select from}
+
 \item{cal_type}{determine summary method(max, min, mean, median, standard deviation) need be used for calculation.}
 
 \item{col_name}{determine column need be calculated}
@@ -16,14 +18,20 @@ summaryInfoCal(df, cal_type, col_name, category, rem_na = TRUE)
 \item{category}{determine group by column}
 
 \item{rem_na}{determine ignore or not ignore NA value in col_name column(default value True)}
-
-\item{data}{Tibble or data frame that you want to select from}
 }
 \value{
-data Tibble or data frame includes summary information for col_name input based on category input
+Tibble or data frame includes summary information for col_name input based on category input
 }
 \description{
 Summary Information Calculator
 
 This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
+}
+\examples{
+summaryInfoCal(palmerpenguins::penguins, "max", "body_mass_g", "sex")
+summaryInfoCal(palmerpenguins::penguins, "min", "body_mass_g", "sex")
+summaryInfoCal(palmerpenguins::penguins, "mean", "body_mass_g", "sex")
+summaryInfoCal(palmerpenguins::penguins, "median", "body_mass_g", "sex")
+summaryInfoCal(palmerpenguins::penguins, "sd", "body_mass_g", "sex")
+
 }

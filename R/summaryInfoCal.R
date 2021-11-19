@@ -2,15 +2,25 @@
 #'
 #'This function calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
 #'
+#'@import stats
+#'@import tidyr
 #'@importFrom magrittr "%>%"
 #'
-#'@param data Tibble or data frame that you want to select from
+#'
+#'@param df Tibble or data frame that you want to select from
 #'@param cal_type determine summary method(max, min, mean, median, standard deviation) need be used for calculation.
 #'@param col_name determine column need be calculated
 #'@param category determine group by column
 #'@param rem_na determine ignore or not ignore NA value in col_name column(default value True)
 #'
-#'@return data Tibble or data frame includes summary information for col_name input based on category input
+#'@return Tibble or data frame includes summary information for col_name input based on category input
+#'
+#'@examples
+#'summaryInfoCal(palmerpenguins::penguins, "max", "body_mass_g", "sex")
+#'summaryInfoCal(palmerpenguins::penguins, "min", "body_mass_g", "sex")
+#'summaryInfoCal(palmerpenguins::penguins, "mean", "body_mass_g", "sex")
+#'summaryInfoCal(palmerpenguins::penguins, "median", "body_mass_g", "sex")
+#'summaryInfoCal(palmerpenguins::penguins, "sd", "body_mass_g", "sex")
 #'
 #'@export
 
@@ -20,10 +30,6 @@ summaryInfoCal <- function(df, cal_type, col_name, category, rem_na = TRUE){
 
   if(missing(df) || missing(cal_type) || missing(col_name) || missing(category)){
     stop('I am so sorry, some of function arguments is/are missing, need specify four arguments\n')
-  }
-
-  if(is.na(df) || is.na(cal_type) || is.na(col_name) || is.na(category)){
-    stop('I am so sorry, some of function arguments is/are NA, need specify four arguments\n')
   }
 
   if(!is.data.frame(df)){

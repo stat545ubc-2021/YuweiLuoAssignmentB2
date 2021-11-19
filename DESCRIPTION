@@ -1,12 +1,12 @@
 Package: YuweiLuoAssignmentB2
 Title: Summary Information Calculator
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person(given = "Yuwei",
            family = "Luo",
            role = c("aut", "cre"),
            email = "weskerlyw@gmail.com")
-Description: calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation)
+Description: calculate the Tibble or data frame column summary information(max, min, mean, median, standard deviation).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,4 +17,6 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     magrittr,
+    tidyr,
+    palmerpenguins,
     dplyr
