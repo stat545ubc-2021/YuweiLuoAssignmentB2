@@ -37,7 +37,7 @@ devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
 
 ## Example
 
-These are 4 basic examples which shows you how to use **summaryInfoCal()** function. 
+These are 5 basic examples which shows you how to use **summaryInfoCal()** function. 
 
 
 ```{r example}
