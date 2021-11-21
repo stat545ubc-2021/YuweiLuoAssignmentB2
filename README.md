@@ -1,19 +1,27 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# YuweiLuoAssignmentB2
+# YuweiLuoAssignmentB2 Info
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of YuweiLuoAssignmentB2 is to calculate the Tibble or data
-frame column summary information(max, min, mean, median, standard
+The goal of YuweiLuoAssignmentB2 package is to calculate the Tibble or
+data frame column summary information(max, min, mean, median, standard
 deviation).
+
+## Description of package
+
+package **YuweiLuoAssignmentB2** contains a function named
+`summaryInfoCal()`.
+
+function **summaryInfoCal()** returns tibble or data frame summary
+information for col_name input based on category input.
 
 ## Installation
 
-You can install the development version from
-[GitHub](https://github.com/) with:
+**YuweiLuoAssignmentB2** is not yet on CRAN. But, You can install the
+development version from [GitHub](https://github.com/) with:
 
 ``` r
 #devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
@@ -21,7 +29,8 @@ You can install the development version from
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+These are 4 basic examples which shows you how to use
+**summaryInfoCal()** function.
 
 ``` r
 library(YuweiLuoAssignmentB2)
