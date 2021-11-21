@@ -24,7 +24,9 @@ information for col_name input based on category input.
 development version from [GitHub](https://github.com/) with:
 
 ``` r
-#devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
+devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
+#> Skipping install of 'YuweiLuoAssignmentB2' from a github remote, the SHA1 (52b5d028) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 ## Example

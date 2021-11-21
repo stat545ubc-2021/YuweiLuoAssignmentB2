@@ -32,8 +32,9 @@ function **summaryInfoCal()** returns tibble or data frame summary information f
 **YuweiLuoAssignmentB2** is not yet on CRAN. But, You can install the development version from [GitHub](https://github.com/) with:
 
 ``` {r}
-#devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
+devtools::install_github("stat545ubc-2021/YuweiLuoAssignmentB2")
 ```
+
 ## Example
 
 These are 4 basic examples which shows you how to use **summaryInfoCal()** function. 
